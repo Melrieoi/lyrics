@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: Decap CMS
   repo: melrieoi/lyricssite
   branch: main
   auth_scope: repo
