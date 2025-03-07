@@ -2,13 +2,11 @@ backend:
   name: github
   repo: melrieoi/lyricssite
   branch: main
-  auth_scope: repo
   site_url: https://melrieoi.github.io/lyricssite
   # base_url: https://api.github.com
-  auth:
-    token: "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"
-  # client_id: Ov23liwx3fNcfBSL2B0D
-  # client_secret: f152f86ba938f1c6de35712e00717acca4ce792b
+  client_id: "Ov23liwx3fNcfBSL2B0D"
+  client_secret: "f152f86ba938f1c6de35712e00717acca4ce792b"
+  auth_scope: repo
 
 media_folder: "uploads"
 public_folder: "/uploads"
