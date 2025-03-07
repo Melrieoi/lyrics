@@ -5,8 +5,8 @@ backend:
   auth_scope: repo
   site_url: https://melrieoi.github.io/lyricssite
   base_url: https://api.github.com
-  client_id: Ov23liwx3fNcfBSL2B0D
-  client_secret: 9907e1298994ff7299f627d2f67fbd6ab5e75b62
+  client_id: Ov23liSrCxh29swMbYm3
+  client_secret: 868f287c6242bc3803f20c47210fd0dde1131424
 
 media_folder: "uploads"
 public_folder: "/uploads"
