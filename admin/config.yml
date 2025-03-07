@@ -1,18 +1,9 @@
-# backend:
-#   name: github
-#   repo: Melrieoi/lyricssite
-#   branch: main
-#   site_url: https://melrieoi.github.io/lyricssite
-#   client_id: "Ov23liwx3fNcfBSL2B0D"
-#   client_secret: "f152f86ba938f1c6de35712e00717acca4ce792b"
-#   uth_scope: "repo, user"
-
 backend:
   name: github
-  repo: Melrieoi/lyricssite
-  branch: main
-  auth_scope: repo
+  repo: melrieoi/lyricssite
   site_url: https://melrieoi.github.io/lyricssite
+  branch: main
+  base_url: http://localhost:3000
 
 
 media_folder: "uploads"
