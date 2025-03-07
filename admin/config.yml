@@ -1,5 +1,5 @@
 backend:
-  name: Decap CMS
+  name: github
   repo: melrieoi/lyricssite
   branch: main
   auth_scope: repo
@@ -7,7 +7,6 @@ backend:
   base_url: https://api.github.com
   client_id: "Ov23liwx3fNcfBSL2B0D"
   client_secret: "58045cb14248afbe5d676ca16cd27ea579a51f2e"
-
 
 media_folder: "uploads"
 public_folder: "/uploads"
