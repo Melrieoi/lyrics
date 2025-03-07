@@ -2,7 +2,6 @@ backend:
   name: github
   repo: melrieoi/lyricssite
   branch: main
-  # auth_scope: repo
   site_url: https://melrieoi.github.io/lyricssite
   base_url: https://api.github.com
   client_id: "Ov23liwx3fNcfBSL2B0D"
