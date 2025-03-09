@@ -1,0 +1,15 @@
+{
+  "bandName": "test 2",
+  "albums": [
+    {
+      "albumName": "try",
+      "year": 25555,
+      "songs": [
+        {
+          "songName": "again",
+          "lyrics": "we\ntry\nagain"
+        }
+      ]
+    }
+  ]
+}
