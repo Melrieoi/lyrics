@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: melrieoi/lyricssite
+  site_url: https://melrieoi.github.io/lyricssite
+  branch: main
+
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "lyrics"
+    label: "Lyrics"
+    folder: "lyrics"
+    create: true
+    slug: "{{slug}}"
+    format: "json"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "artist", label: "Artist", widget: "string" }
+      - { name: "album", label: "Album", widget: "string" }
+      - { name: "lyrics", label: "Lyrics", widget: "text" }
