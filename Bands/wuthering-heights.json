@@ -1,0 +1,15 @@
+{
+  "bandName": "Wuthering Heights",
+  "albums": [
+    {
+      "albumName": "Salt",
+      "year": 0,
+      "songs": [
+        {
+          "songName": "The Mad Sailor",
+          "lyrics": "this old salt will go down with his ship"
+        }
+      ]
+    }
+  ]
+}
