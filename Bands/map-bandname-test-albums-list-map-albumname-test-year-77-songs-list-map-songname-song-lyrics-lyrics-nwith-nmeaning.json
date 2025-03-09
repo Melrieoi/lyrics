@@ -1,0 +1,15 @@
+{
+  "bandName": "test",
+  "albums": [
+    {
+      "albumName": "test",
+      "year": 77,
+      "songs": [
+        {
+          "songName": "song",
+          "lyrics": "lyrics\nwith\nmeaning"
+        }
+      ]
+    }
+  ]
+}
