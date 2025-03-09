@@ -1,0 +1,35 @@
+name: Generate Bands JSON
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Bands/**'   # Trigger action when any files in the 'Bands' folder change
+
+jobs:
+  generate-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Set your Node.js version here
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate bands.json
+        run: npm run generate-bands-json
+
+      - name: Commit and push bands.json
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add bands.json
+          git commit -m "Update bands.json"
+          git push
