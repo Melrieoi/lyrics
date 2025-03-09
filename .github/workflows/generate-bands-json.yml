@@ -21,10 +21,14 @@ jobs:
           node-version: '14'  # Set your Node.js version here
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd /home/runner/work/lyrics/lyricssite  # Change to the correct directory
+          npm install
 
       - name: Generate bands.json
-        run: npm run generate-bands-json
+        run: |
+          cd /home/runner/work/lyrics/lyricssite  # Change to the correct directory
+          npm run generate-bands-json
 
       - name: Commit and push bands.json
         run: |
