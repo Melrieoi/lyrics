@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <body>
 
-<h1>yehs</h1>
+<h1>Lyrics example:</h1>
 
-<h2>nou</h2>
+<h2 id="songTitle"></h2>
+<h3 id="artistName"></h3>
+<h4 id="albumName"></h4>
+<pre id="lyricsText"></pre>
+
+<script>
+    function loadLyrics() {
+        let selectedFile = document.getElementById("songSelector").value;
+
+        fetch("lyrics/" + selectedFile)
+            .then(response => response.json()) 
+            .then(data => {
+                document.getElementById("songTitle").innerText = data.title;
+                document.getElementById("artistName").innerText = "Artist: " + data.artist;
+                document.getElementById("albumName").innerText = "Album: " + data.album;
+                document.getElementById("lyricsText").innerText = data.lyrics;
+            })
+            .catch(error => console.error("Error loading the lyrics:", error));
+    }
+</script>
 
 </body>
 
