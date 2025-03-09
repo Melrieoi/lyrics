@@ -2,6 +2,9 @@
 
 <html lang="en">
 
+<head id="Hardworlder"> <!-- needs to be generic -->
+</head>
+
 <body>
 
 <h1>Lyrics example:</h1>
@@ -13,7 +16,7 @@
 
 <script>
     function loadLyrics() {
-        let selectedFile = document.getElementById("songSelector").value;
+        let selectedFile = document.getElementById("Hardworlder").value; // needs to be generic
 
         fetch("lyrics/" + selectedFile)
             .then(response => response.json()) 
