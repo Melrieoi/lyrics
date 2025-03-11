@@ -8,9 +8,9 @@
 
 <body>
 
-<h1>Lyrics example:</h1>
+<!-- <h1>Lyrics example:</h1> -->
 
-<script>let imageSrc = band.image ? band.image : "default-band-image.png";</script>
+<!-- <script>let imageSrc = band.image ? band.image : "default-band-image.png";</script>
 
 <select id="songSelector">
     <option value="tiger-tiger.json">Song 1</option>
@@ -21,9 +21,11 @@
 <h2 id="songTitle"></h2>
 <h3 id="artistName"></h3>
 <h4 id="albumName"></h4>
-<pre id="lyricsText"></pre>
+<pre id="lyricsText"></pre> -->
 
-<script>
+
+
+<!-- <script>
     function loadLyrics() {
         let selectedFile = document.getElementById("songSelector").value; // needs to be generic
 
@@ -37,7 +39,13 @@
             })
             .catch(error => console.error("Error loading the lyrics:", error));
     }
-</script>
+</script> -->
+
+
+<h1>Band Page</h1>
+<div id="albumsContainer"></div>
+
+<script src="scripts/band.js"></script>
 
 </body>
 
