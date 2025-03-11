@@ -20,10 +20,6 @@ jobs:
         with:
           node-version: '14'  # Set your Node.js version here
 
-      # - name: Make directory
-      #   run: |
-      #     mkdir /home/runner/work/lyrics/lyrics
-
       - name: Install dependencies
         run: |
           cd /home/runner/work/lyrics/lyrics/  # Change to the correct directory
@@ -34,13 +30,16 @@ jobs:
           cd /home/runner/work/lyrics/lyrics/  # Change to the correct directory
           npm run generate-bands-json
 
-      - name: Commit and push bands.json
+      - name: Configure Git
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+
+      - name: Commit and Push Changes
+        run: |
           git add bands.json
           git commit -m "Update bands.json"
-          git push
-      
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Melrieoi/lyrics.git main
+
       - name: Debug File Structure
         run: ls -R
