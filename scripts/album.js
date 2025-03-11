@@ -12,12 +12,13 @@ fetch(`../lyrics/Bands/${band}.json`)
       let songsContainer = document.getElementById("songsContainer");
       albumData.songs.forEach(song => {
       let div = document.createElement("div");
-        div.innerHTML = `
-        <a href="#">${song.songName}</a>
-        `;
+
+        // div.innerHTML = `${song.songName}`;
+
         showLyrics(song.songName, song.lyrics.replace(/\n/g, "<br>"));
+
         songsContainer.appendChild(div);
-    });
+      });
 
 
 
@@ -28,7 +29,7 @@ fetch(`../lyrics/Bands/${band}.json`)
     //           <a href="#" onclick="showLyrics('${song.songName}', '${song.lyrics.replace(/\n/g, "<br>")}')">${song.songName}</a>
     //       `;
     //       songsContainer.appendChild(div);
-    });
+  });
 
 function showLyrics(title, lyrics) {
     document.getElementById("lyricsModalTitle").innerText = title;
