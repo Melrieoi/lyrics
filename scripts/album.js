@@ -9,11 +9,17 @@ fetch(`../lyrics/Bands/${band}.json`)
       let albumData = data.albums.find(a => a.albumName === album);
       document.getElementById("albumTitle").innerText = `${albumData.albumName} (${albumData.year})`;
       
-      div.innerHTML = `
-      <a href="#">${song.songName}</a>
-      `;
+      let songsContainer = document.getElementById("songsContainer");
+      albumData.songs.forEach(song => {
+      let div = document.createElement("div");
+        div.innerHTML = `
+        <a href="#">${song.songName}</a>
+        `;
+        showLyrics(song.songName, song.lyrics.replace(/\n/g, "<br>"));
+        songsContainer.appendChild(div);
+    });
 
-      showLyrics(song.songName, song.lyrics.replace(/\n/g, "<br>"));
+
 
     //   let songsContainer = document.getElementById("songsContainer");
     //   albumData.songs.forEach(song => {
