@@ -20,6 +20,10 @@ jobs:
         with:
           node-version: '14'  # Set your Node.js version here
 
+      - name: Make directory
+        run: |
+          mkdir /home/runner/work/lyrics/lyricssite
+
       - name: Install dependencies
         run: |
           cd /home/runner/work/lyrics/lyricssite  # Change to the correct directory
