@@ -2,7 +2,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const band = urlParams.get("band");
 
-fetch(`../Bands/${band}.json`)
+fetch(`../lyrics/Bands/${band}.json`)
   .then(response => response.json())
   .then(data => {
       document.getElementById("bandTitle").innerText = data.bandName;
