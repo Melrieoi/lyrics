@@ -9,15 +9,20 @@ fetch(`../lyrics/Bands/${band}.json`)
       let albumData = data.albums.find(a => a.albumName === album);
       document.getElementById("albumTitle").innerText = `${albumData.albumName} (${albumData.year})`;
       
-      let songsContainer = document.getElementById("songsContainer");
-      albumData.songs.forEach(song => {
-          let div = document.createElement("div");
-          div.innerHTML = `
-              <a href="#" onclick="showLyrics('${song.songName}', '${song.lyrics.replace(/\n/g, "<br>")}')">${song.songName}</a>
-          `;
-          songsContainer.appendChild(div);
-      });
-  });
+      div.innerHTML = `
+      <a href="#">${song.songName}</a>
+      `;
+
+      showLyrics(song.songName, song.lyrics.replace(/\n/g, "<br>"));
+
+    //   let songsContainer = document.getElementById("songsContainer");
+    //   albumData.songs.forEach(song => {
+    //       let div = document.createElement("div");
+    //       div.innerHTML = `
+    //           <a href="#" onclick="showLyrics('${song.songName}', '${song.lyrics.replace(/\n/g, "<br>")}')">${song.songName}</a>
+    //       `;
+    //       songsContainer.appendChild(div);
+    });
 
 function showLyrics(title, lyrics) {
     document.getElementById("lyricsModalTitle").innerText = title;
