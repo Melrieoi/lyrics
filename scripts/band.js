@@ -12,7 +12,7 @@ fetch(`../Bands/${band}.json`)
           let div = document.createElement("div");
           div.innerHTML = `
               <img src="../${album.cover}">
-              <a href="../Albums/album.html?band=${band}&album=${album.albumName}">${album.albumName} (${album.year})</a>
+              <a href="..album.html?band=${band}&album=${album.albumName}">${album.albumName} (${album.year})</a>
           `;
           albumsContainer.appendChild(div);
       });
