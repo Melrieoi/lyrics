@@ -41,3 +41,6 @@ jobs:
           git add bands.json
           git commit -m "Update bands.json"
           git push
+      
+      - name: Debug File Structure
+        run: ls -R
