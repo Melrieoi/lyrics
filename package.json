@@ -1,0 +1,27 @@
+{
+  "name": "lyricssite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "generate-bands-json": "node generateBandsJson.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Melrieoi/lyricssite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Melrieoi/lyricssite/issues"
+  },
+  "homepage": "https://github.com/Melrieoi/lyricssite#readme",
+  "description": "",
+  "dependencies": {
+    "netlify-cms-app": "^2.14.14"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
