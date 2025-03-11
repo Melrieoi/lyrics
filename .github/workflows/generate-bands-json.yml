@@ -36,10 +36,13 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
       - name: Commit and Push Changes
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/Melrieoi/lyrics.git
           git add bands.json
-          git commit -m "Update bands.json"
-          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Melrieoi/lyrics.git main
+          git commit -m "Update bands.json" || echo "No changes to commit"
+          git push origin main
 
       - name: Debug File Structure
         run: ls -R
