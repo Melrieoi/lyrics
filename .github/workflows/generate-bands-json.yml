@@ -22,16 +22,16 @@ jobs:
 
       # - name: Make directory
       #   run: |
-      #     mkdir /home/runner/work/lyrics/lyricssite
+      #     mkdir /home/runner/work/lyrics/lyrics
 
       - name: Install dependencies
         run: |
-          cd /home/runner/work/lyrics/  # Change to the correct directory
+          cd /home/runner/work/lyrics/lyrics/  # Change to the correct directory
           npm install
 
       - name: Generate bands.json
         run: |
-          cd /home/runner/work/lyrics/  # Change to the correct directory
+          cd /home/runner/work/lyrics/lyrics/  # Change to the correct directory
           npm run generate-bands-json
 
       - name: Commit and push bands.json
