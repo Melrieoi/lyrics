@@ -7,17 +7,31 @@ fetch(`../lyrics/Bands/${band}.json`)
   .then(response => response.json())
   .then(data => {
       let albumData = data.albums.find(a => a.albumName === album);
-      document.getElementById("albumTitle").innerText = `${albumData.albumName} (${albumData.year})`;
+      document.getElementById("pageTitle").innerText = `${albumData.albumName} (${albumData.year})`; // Sets the page title
+      document.getElementById("bandTitle").innerText = data.bandName; // Sets the h1 text
       
-      let songsContainer = document.getElementById("songsContainer");
-      albumData.songs.forEach(song => {
-      let div = document.createElement("div");
+      let albumsContainer = document.getElementById("album");
+      
+      data.albums.forEach(album => {
+          let ul = document.createElement("ul");
+          ul.innerHTML = `
+              <li id="albumName"><a href="album.html?band=${band}&album=${album.albumName}">${album.albumName} (${album.year})</a></li>
+              `;
+          albumsContainer.appendChild(ul);
 
-        // div.innerHTML = `${song.songName}`;
 
-        showLyrics(song.songName, song.lyrics.replace(/\n/g, "<br>"));
 
-        songsContainer.appendChild(div);
+          album.songs.forEach(song => {
+              let li = document.createElement("li");
+              li.innerHTML = `${song.songName}`;
+              li.setAttribute('id', 'songName');
+
+              let pre = document.createElement("pre");
+              pre.setAttribute('id', 'lyricsModalBody');
+              showLyrics(song.lyrics.replace(/\n/g, "<br>"));
+
+              ul.appendChild(li, pre);
+          });
       });
 
 
@@ -32,7 +46,7 @@ fetch(`../lyrics/Bands/${band}.json`)
   });
 
 function showLyrics(title, lyrics) {
-    document.getElementById("lyricsModalTitle").innerText = title;
-    document.getElementById("lyricsModalBody").innerHTML = lyrics;
-    document.getElementById("lyricsModal").style.display = "block";
+  // document.getElementById("lyricsModalTitle").innerText = title;
+  document.getElementById("lyricsModalBody").innerHTML = lyrics;
+  // document.getElementById("lyricsModal").style.display = "block";
 }
