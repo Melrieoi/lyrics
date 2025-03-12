@@ -13,24 +13,41 @@ fetch(`../lyrics/Bands/${band}.json`)
       let albumsContainer = document.getElementById("album");
       
       data.albums.forEach(album => {
-          let ul = document.createElement("ul");
-          ul.innerHTML = `
-              <li id="albumName">${album.albumName} (${album.year})</li>
-              `;
-          albumsContainer.appendChild(ul);
+        let ul = document.createElement("ul");
+        ul.innerHTML = `
+            <li id="albumName"><a>${album.albumName} (${album.year})</a></li>
+            `;
+        albumsContainer.appendChild(ul);
 
-          album.songs.forEach(song => {
-              let li = document.createElement("li");
-              li.innerHTML = `${song.songName}`;
-              li.setAttribute('id', 'songName');
+        // album.songs.forEach(song => {
+        //     let li = document.createElement("li");
+        //     li.innerHTML = `${song.songName}`;
+        //     li.setAttribute('id', 'songName');
 
-              let pre = document.createElement("pre");
-              pre.setAttribute('id', 'lyricsModalBody');
-              showLyrics((song.lyrics || "").replace(/\n/g, "<br>"));
+        //     let pre = document.createElement("pre");
+        //     pre.setAttribute('id', 'lyricsModalBody');
+        //     showLyrics((song.lyrics || "").replace(/\n/g, "<br>"));
 
-              ul.appendChild(li);
-              ul.appendChild(pre);
-          });
+        //     ul.appendChild(li);
+        //     ul.appendChild(pre);
+        // });
+        album.songs.forEach(song => {
+          // Create a list item (li) for the song name
+          let li = document.createElement("li");
+          li.innerHTML = `${song.songName}`;
+          li.setAttribute('id', 'songName');
+      
+          // Create a pre element for the lyrics
+          let pre = document.createElement("pre");
+          pre.setAttribute('id', 'lyricsModalBody');
+          
+          // Set the lyrics in the pre element (replace new lines with <br>)
+          pre.innerHTML = (song.lyrics || "No lyrics available").replace(/\n/g, "<br>");
+      
+          // Append both elements (song name and lyrics) to the parent ul
+          ul.appendChild(li);
+          ul.appendChild(pre);
+        });
       });
 
 
