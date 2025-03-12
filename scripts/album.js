@@ -15,11 +15,9 @@ fetch(`../lyrics/Bands/${band}.json`)
       data.albums.forEach(album => {
           let ul = document.createElement("ul");
           ul.innerHTML = `
-              <li id="albumName"><a href="album.html?band=${band}&album=${album.albumName}">${album.albumName} (${album.year})</a></li>
+              <li id="albumName">${band}&album=${album.albumName}">${album.albumName} (${album.year})</li>
               `;
           albumsContainer.appendChild(ul);
-
-
 
           album.songs.forEach(song => {
               let li = document.createElement("li");
@@ -45,7 +43,7 @@ fetch(`../lyrics/Bands/${band}.json`)
     //       songsContainer.appendChild(div);
   });
 
-function showLyrics(title, lyrics) {
+function showLyrics(lyrics) {
   // document.getElementById("lyricsModalTitle").innerText = title;
   document.getElementById("lyricsModalBody").innerHTML = lyrics;
   // document.getElementById("lyricsModal").style.display = "block";
