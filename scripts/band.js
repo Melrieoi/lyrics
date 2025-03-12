@@ -7,10 +7,12 @@ fetch(`../lyrics/Bands/${band}.json`)
     .then(data => {
         document.getElementById("pageTitle").innerText = data.bandName; // Sets the page title
         document.getElementById("bandTitle").innerText = data.bandName; // Sets the h1 text
-        let albumsContainer = document.getElementById("album");
+        let albumsContainer = document.getElementById("albumContainer");
       
         data.albums.forEach(album => {
             let div = document.createElement("div");
+            div.setAttribute('id', 'album');
+
             let ul = document.createElement("ul");
             ul.innerHTML = `
                 <li id="albumName"><a href="album.html?band=${band}&album=${album.albumName}">${album.albumName} (${album.year})</a></li>
