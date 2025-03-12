@@ -27,7 +27,7 @@ fetch(`../lyrics/Bands/${band}.json`)
           let pre = document.createElement("pre");
           pre.setAttribute('id', 'lyricsModalBody');
           
-          pre.innerHTML = (song.lyrics || "No lyrics available").replace(/\n/g, "<br>") + ("<br>");
+          pre.innerHTML = (song.lyrics || "No lyrics available").replace(/\n/g, "<br>") + "<br> ";
       
           ul.appendChild(li);
           ul.appendChild(pre);
