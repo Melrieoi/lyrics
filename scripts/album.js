@@ -19,50 +19,19 @@ fetch(`../lyrics/Bands/${band}.json`)
             `;
         albumsContainer.appendChild(ul);
 
-        // album.songs.forEach(song => {
-        //     let li = document.createElement("li");
-        //     li.innerHTML = `${song.songName}`;
-        //     li.setAttribute('id', 'songName');
-
-        //     let pre = document.createElement("pre");
-        //     pre.setAttribute('id', 'lyricsModalBody');
-        //     showLyrics((song.lyrics || "").replace(/\n/g, "<br>"));
-
-        //     ul.appendChild(li);
-        //     ul.appendChild(pre);
-        // });
         album.songs.forEach(song => {
-          // Create a list item (li) for the song name
           let li = document.createElement("li");
           li.innerHTML = `${song.songName}`;
           li.setAttribute('id', 'songName');
       
-          // Create a pre element for the lyrics
           let pre = document.createElement("pre");
           pre.setAttribute('id', 'lyricsModalBody');
           
-          // Set the lyrics in the pre element (replace new lines with <br>)
           pre.innerHTML = (song.lyrics || "No lyrics available").replace(/\n/g, "<br>");
       
-          // Append both elements (song name and lyrics) to the parent ul
           ul.appendChild(li);
           ul.appendChild(pre);
         });
       });
 
-
-
-    //   let songsContainer = document.getElementById("songsContainer");
-    //   albumData.songs.forEach(song => {
-    //       let div = document.createElement("div");
-    //       div.innerHTML = `
-    //           <a href="#" onclick="showLyrics('${song.songName}', '${song.lyrics.replace(/\n/g, "<br>")}')">${song.songName}</a>
-    //       `;
-    //       songsContainer.appendChild(div);
   });
-
-function showLyrics(lyrics) {
-  // document.getElementById("lyricsModalTitle").innerText = title;
-  document.getElementById("lyricsModalBody").innerHTML = lyrics;
-  // document.getElementById("lyricsModal").style.display = "block";
-}
