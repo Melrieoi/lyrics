@@ -14,7 +14,7 @@ fetch(`../lyrics/Bands/${band}.json`)
 
         let ul = document.createElement("ul");
         ul.innerHTML = `
-            <li id="albumName"><a>${album.albumName} (${album.year})</a></li>
+            <li id="albumName"><a>${albumData.albumName} (${albumData.year})</a></li>
             `;
         albumsContainer.appendChild(ul);
 
