@@ -1,0 +1,317 @@
+﻿@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(46, 46, 46);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 100px;
+}
+
+nav {
+    width: 100%;
+    height: 51px;
+    background-color: rgb(114, 206, 206);
+    font-family: Days Regular;
+}
+
+    nav ul {
+        float: left;
+    }
+
+        nav ul li {
+            float: left;
+            list-style: none;
+            position: relative;
+        }
+
+        nav li a:hover {
+            background-color: #53a4af81;
+        }
+
+            nav ul li a {
+                display: block;
+                color: black;
+                font-size: 18px;
+                padding: 14px 14px;
+                text-decoration: none;
+            }
+
+            nav ul li ul {
+                font-weight: none;
+                display: none;
+                position: absolute;
+                background-color: grey;
+                border-radius: 0px 0px 0px 0px;
+            }
+            
+            nav ul li:hover ul {
+                display: block;
+            }
+            
+            nav ul li:hover ul li ul {
+                display: none;
+            }
+
+            nav ul li ul li:hover ul {
+                display: block;
+                position: absolute;
+                margin-top: -76.7%;
+                margin-left: 100%;
+            }
+
+/* Start of band images */
+
+#bandsdiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#band {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    width: 21%;
+    border-bottom: solid rgb(114, 206, 206);
+    padding-bottom: 0.2%;
+}
+
+#band a {
+    font-size: 24px;
+    color: goldenrod;
+    text-decoration: none;
+}
+
+#band img {
+    width: 100%;
+}
+
+/* End of band images */
+
+/* Start of band albums */
+
+#album {
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+#album li:not(#albumName) {
+    list-style: none;
+    font-size: 22px;
+}
+
+#album li {
+    list-style: none;
+}
+
+#albumName a{
+    font-size: 24px;
+    color: goldenrod;
+    border-bottom: 2px solid goldenrod;
+    text-decoration: none;
+}
+
+#albumName {
+    padding-bottom: 0.5%;
+}
+
+pre {
+    padding-top: 0.5%;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+#songName {
+    color: goldenrod;
+    pointer-events: none;
+    margin-top: 0.5%;
+}
+
+/* End of band albums */
+
+p {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    pointer-events: none;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    pointer-events: none;
+    color: goldenrod;
+}
+
+#welcome {
+    text-align: center;
+    pointer-events: none;
+    padding-top: 15px;
+}
+
+@font-face {
+    font-family: "Days Regular";
+    src: url("fonts/Days.ttf");
+    src: url("fonts/Days.ttf") format("ttf"), url("fonts/Days.ttf") format("TrueType-lettertypebestand"), url("fonts/Days.ttf") format("ttf");
+}
+
+#contact li {
+    float: right;
+}
+
+#contact {
+    width: 100%;
+    height: 51px;
+}
+
+    #contact ul {
+        float: right;
+    }
+
+        #contact li {
+            list-style: none;
+            position: relative;
+        }
+
+        #contact li a:hover {
+            background-color: #8D8D8D;
+        }
+
+        #contact li a {
+            display: block;
+            color: black;
+            font-size: 18px;
+            padding: 14px 14px;
+            text-decoration: none;
+        }
+
+.active {
+    background-color: rgb(48, 170, 170);
+}
+
+.active:hover {
+    background-color: rgb(70, 190, 190);
+}
+
+#maindiv {
+    text-align: left;
+    flex: 1;
+}
+
+#maindiv p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.frtc {
+    float: left;
+    padding-right: 1%;
+}
+
+#div1 {
+    background-color: white;
+    display: flex;
+}
+
+#div2 {
+    background-color: lightblue;
+    display: flex;
+}
+
+footer {
+    background-color: grey;
+    border-top-style: solid;
+    border-top-color: rgba(0, 0, 0, 0.719);
+    border-top-width: 5px;
+}
+
+footer p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+footer a {
+    color: black;
+    font-weight: bold;
+}
+
+.imgme {
+    display: block;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
+}
+
+.imgspinotank {
+    display: block;
+    width: 30%;
+    float: right;
+    padding-left: 1%;
+    margin-top: -1.25%;
+    margin-bottom: -0.25%;
+}
+
+#padp {
+    padding-top: 0%;
+    margin-bottom: -2%;
+    margin-left: 15%;
+}
+
+#padcontact {
+    position: absolute;
+    margin-left: 5%;
+}
+
+#padhome {
+    position: absolute;
+}
+
+#div2 p a {
+    color: black;
+}
+
+#div1 p#aligncenter {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* display none {
+    display;none
+} */
+
+#testing {
+    background-image: url("images/gradme.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+    background-color: black;
+    height: 500px;
+    position: relative;
+    /* filter: brightness(50%); */
+
+}
+
+#testing h1{
+    color: white;
+    font-size: 400%;
+    top: 43%;
+    position: absolute;
+    margin-left: 10%;
+    pointer-events: none;
+}
