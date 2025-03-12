@@ -1,4 +1,4 @@
-// shows albums
+// shows albums for band.html
 const urlParams = new URLSearchParams(window.location.search);
 const band = urlParams.get("band");
 
