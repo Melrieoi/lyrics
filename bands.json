@@ -5,10 +5,12 @@
   },
   {
     "bandName": "Slough Feg",
-    "filename": "slough-feg"
+    "filename": "slough-feg",
+    "image": "/uploads/slough-feg.png"
   },
   {
     "bandName": "Wuthering Heights",
-    "filename": "wuthering-heights"
+    "filename": "wuthering-heights",
+    "image": "/uploads/wuthering-heights.png"
   }
 ]
