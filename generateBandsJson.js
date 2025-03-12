@@ -21,6 +21,7 @@ fs.readdir(bandsFolder, (err, files) => {
     return {
       bandName: bandData.bandName,
       filename: file.replace('.json', ''),
+      image: bandData.image
     };
   });
 
