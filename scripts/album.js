@@ -15,7 +15,7 @@ fetch(`../lyrics/Bands/${band}.json`)
       data.albums.forEach(album => {
           let ul = document.createElement("ul");
           ul.innerHTML = `
-              <li id="albumName">${band}&album=${album.albumName}">${album.albumName} (${album.year})</li>
+              <li id="albumName">${album.albumName} (${album.year})</li>
               `;
           albumsContainer.appendChild(ul);
 
@@ -26,9 +26,10 @@ fetch(`../lyrics/Bands/${band}.json`)
 
               let pre = document.createElement("pre");
               pre.setAttribute('id', 'lyricsModalBody');
-              showLyrics(song.lyrics.replace(/\n/g, "<br>"));
+              showLyrics((song.lyrics || "").replace(/\n/g, "<br>"));
 
-              ul.appendChild(li, pre);
+              ul.appendChild(li);
+              ul.appendChild(pre);
           });
       });
 
