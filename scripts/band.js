@@ -5,7 +5,8 @@ const band = urlParams.get("band");
 fetch(`../lyrics/Bands/${band}.json`)
     .then(response => response.json())
     .then(data => {
-        document.getElementById("bandTitle").innerText = data.bandName;
+        document.getElementById("pageTitle").innerText = data.bandName; // Sets the page title
+        document.getElementById("bandTitle").innerText = data.bandName; // Sets the h1 text
         let albumsContainer = document.getElementById("album");
       
         data.albums.forEach(album => {
