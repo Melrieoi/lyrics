@@ -2,20 +2,6 @@
   "bandName": "Slough Feg",
   "albums": [
     {
-      "albumName": "Hardworlder",
-      "year": 2007,
-      "songs": [
-        {
-          "songName": "The Return of Dr.Universe",
-          "lyrics": ""
-        },
-        {
-          "songName": "Tiger! Tiger!",
-          "lyrics": "The spheres in motion\nWrapped around collapsing star\nImmortal hands and eyes a frame\nOn fearful scars\n\nThe mistery of living,\nBreating dying hard\nMy name and occupation\nTattoed on my face\n\nThe stars my destiny deep space my dwelling place"
-        }
-      ]
-    },
-    {
       "albumName": "Twilight of the Idols",
       "year": 1999,
       "songs": [
@@ -32,6 +18,38 @@
         {
           "songName": "Trader and Gunboats",
           "lyrics": "Down and out on the Solomani Rim\nNow the spinward marches don't look so grim\n\nI hear the X-boats on my trail\nEngines always on the run\n\nI'm mercenary, live in hyper-drive\nTraders and Gunboats keeping me alive\n\nOn route to Pscias always on the run\nBusted in the Sword-Worlds with a loaded Gauss-Gun\n\nI hear the X-boats on my trail\nEngines always on the run\n\n(approx)\nThe Sword-Worlds are a loose confederation of worlds\nall colonised in the same era\n\nThrough the centuries their relationship has varied from \nfledgeling empires to scattered trading packs\n\nAt the spinward edge 120 parsecs\nfrom the original center of the Empirium\n\nThe Martians represent one of the furthest\nextensive exploration in the Zodani consulate and Vargr extents\n(approx)\n\nDown and out on the Solomani Rim\nNow the spinward marches don't look so grim\n\nOn route to Pscias always on the run\nBusted in the Sword-Worlds with a loaded Gauss-Gun (Gauss-Gun)\n\nI hear the X-boats on my trail\nEngines always on the run"
+        }
+      ]
+    },
+    {
+      "albumName": "Atavism",
+      "year": 2005,
+      "songs": [
+        {
+          "lyrics": "Released from the bondage\nBloodlust is turned to knowledge\nI will kill you\nReturn into the carnage\n\nSentient forms have risen\nTime is an endless prison\nYou will die\nI'll become cold and wizened\n\nYou know your place in history\nAre you denying I am free?\nAny prophet of this new dark age can see\n\nRise from the tomb of millions\nCrawl to become reptilian\nI will kill you\n\nLike those who came before you\nLife never ceased to bore you\nYou will die\nHistory will ignore you\n\nThen you'll engage in sophistry\nWhy can't you handle being free?\nAnother victim of a slaughter prophecy\n\nYou know your place in history\nAre you denying I am free?\nAny prophet of this new dark age can see\n\nNo need for ritual slaughter\nBow to the crest of martyrs\nYou will evolve\nBut not getting any smarter\n\nYou think the truth will set you free\nWhile you're denying what you see\nAny prophet of this new dark age can see",
+          "songName": "I Will Kill You/You Will Die"
+        },
+        {
+          "songName": "Atavism",
+          "lyrics": "Decending and turning the shadowed souls in his hand\nStanding alone by the guadrian I hear his command\nSwaying blindly, under a moribund sun\nStrangely the pain has only begun\n\nPainlessly crossing the yardlines the ball in his hand\nPiles of bodies dispached in the grass and the sand\nHelmets crashing, under the weight of the one\nVaguely aware the pain has begun\n\nOut of the window the sirens of slaughter begin\nWhistling alone in the silence I hear them come in\nFading blinded, foraging under the leaves\nStrangely the pain is finally relieved"
+        },
+        {
+          "songName": "Aumaeus the Swineherd",
+          "lyrics": "Twelve heards on the mainland shore\nGathering slaughter I wait\nI'll bring you my finest (paw?)\nDriving the drones to their fate\nI'm a swineherd awaiting my masters\nReturn from the city of (try?)\n\nThe anger of gods increase\nSlaughering cattle to burn\nThe baiting of hounds won't ciece\nLong for their master they yearn\n?Soon as we'll fall to the hand of my master upon his triumphant return?\n\nThe ?insulence? soon disposed\nCarelessly stalking their prey\nI'm ?raging? the islands coast\nSearching my mind far away\n\nI'm a swineherd impatiently waiting\nTo spill your blood on the day"
+        }
+      ]
+    },
+    {
+      "albumName": "Hardworlder",
+      "year": 2007,
+      "songs": [
+        {
+          "songName": "The Return of Dr.Universe",
+          "lyrics": ""
+        },
+        {
+          "songName": "Tiger! Tiger!",
+          "lyrics": "The spheres in motion\nWrapped around collapsing star\nImmortal hands and eyes a frame\nOn fearful scars\n\nThe mistery of living,\nBreating dying hard\nMy name and occupation\nTattoed on my face\n\nThe stars my destiny deep space my dwelling place"
         }
       ]
     }
