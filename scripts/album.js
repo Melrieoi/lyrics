@@ -9,9 +9,9 @@ fetch(`../lyrics/Bands/${band}.json`)
       let albumData = data.albums.find(a => a.albumName === album);
       document.getElementById("pageTitle").innerText = `${albumData.albumName} (${albumData.year})`; // Sets the page title
       document.getElementById("bandTitle").innerText = data.bandName; // Sets the h1 text
-      
+
       let albumsContainer = document.getElementById("album");
-      
+
       data.albums.forEach(album => {
         let ul = document.createElement("ul");
         ul.innerHTML = `
@@ -19,19 +19,18 @@ fetch(`../lyrics/Bands/${band}.json`)
             `;
         albumsContainer.appendChild(ul);
 
-        album.songs.forEach(song => {
+        albumData.songs.forEach(song => {
           let li = document.createElement("li");
           li.innerHTML = `${song.songName}`;
           li.setAttribute('id', 'songName');
-      
+
           let pre = document.createElement("pre");
           pre.setAttribute('id', 'lyricsModalBody');
-          
+
           pre.innerHTML = (song.lyrics || "No lyrics available").replace(/\n/g, "<br>") + "<br> ";
-      
+
           ul.appendChild(li);
           ul.appendChild(pre);
         });
       });
-
   });

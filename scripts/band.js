@@ -10,15 +10,18 @@ fetch(`../lyrics/Bands/${band}.json`)
         let albumsContainer = document.getElementById("album");
       
         data.albums.forEach(album => {
+            let div = document.createElement("div");
             let ul = document.createElement("ul");
             ul.innerHTML = `
                 <li id="albumName"><a href="album.html?band=${band}&album=${album.albumName}">${album.albumName} (${album.year})</a></li>
                 `;
-            albumsContainer.appendChild(ul);
+            div.appendChild(ul);
+            albumsContainer.appendChild(div);
 
             album.songs.forEach(song => {
                 let li = document.createElement("li");
                 li.innerHTML = `${song.songName}`;
+
 
                 ul.appendChild(li);
             });
