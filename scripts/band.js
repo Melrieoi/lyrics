@@ -15,8 +15,7 @@ fetch(`../lyrics/Bands/${band}.json`)
                 `;
             albumsContainer.appendChild(ul);
 
-            let albumData = data.albums.find(a => a.albumName === album);
-            albumData.songs.forEach(song => {
+            album.songs.forEach(song => {
                 let li = document.createElement("li");
                 li.innerHTML = `${song.songName}`;
 
