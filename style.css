@@ -92,6 +92,7 @@ nav {
 
 #band img {
     width: 100%;
+    object-fit: cover;
 }
 
 /* End of band images */
