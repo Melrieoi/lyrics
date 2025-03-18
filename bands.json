@@ -10,6 +10,11 @@
     "image": "/uploads/laura.png"
   },
   {
+    "bandName": "Grand Magus",
+    "filename": "grand-magus",
+    "image": "/uploads/grand-magus-2.jpg"
+  },
+  {
     "bandName": "Slough Feg",
     "filename": "slough-feg",
     "image": "/uploads/slough-feg.png"
