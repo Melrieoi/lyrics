@@ -1,0 +1,16 @@
+{
+  "bandName": "Grand Magus",
+  "image": "/uploads/grand-magus-1.jpg",
+  "albums": [
+    {
+      "albumName": "Triumph and Power",
+      "year": 2014,
+      "songs": [
+        {
+          "songName": "Blackmoon",
+          "lyrics": "text"
+        }
+      ]
+    }
+  ]
+}
