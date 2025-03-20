@@ -66,6 +66,16 @@
           "songName": "The Tell-Tale Heart"
         }
       ]
+    },
+    {
+      "albumName": "Traveller Supplement 1: The Ephemeral Glades",
+      "year": 2025,
+      "songs": [
+        {
+          "songName": "Knife World",
+          "lyrics": "I’m scanning Mithril’s Glade\nCosmos a dull crusade\nI’m a Bright Face drone\nI wondered endlessly\nCosmonic vagrancy\nOn a two-faced clone\n\nCascading amongst the stars\nRelating through avatars\nInvading deserted moores\n\nTransmitting across the planes\nEnduring the frozen rain\nCascading amongst the stars\n\nProfessor's Guinea Pig\nAbandoned mining rig\nHe’s the last in line\nKnife of the Frontier Wars\nFree Traders’ merchant whores\nIt’s his finest crime\n\nCascading amongst the stars\nAnd hiding behind the scars\nAcquired in frontier wars\n\nStraight out of the Neutral Zone\nAbandoned the merchant clone\nCascading amongst the stars\n\nPast the mining zone\nMission straight to Rhylan\nSeized your weapons on the ground\n\nVice of Median\nBreaks the range of silence\nCrossed this space but never found"
+        }
+      ]
     }
   ],
   "image": "/uploads/slough-feg.png"
