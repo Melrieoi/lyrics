@@ -1,7 +1,8 @@
 backend:
   name: github
   repo: melrieoi/lyrics
-  site_url: https://melrieoi.github.io/lyrics
+  # site_url: https://melrieoi.github.io/lyrics
+  site_url: https://melrieoilyrics.netlify.app
   branch: main
 
 
