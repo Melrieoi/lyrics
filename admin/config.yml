@@ -1,6 +1,6 @@
 backend:
-  # name: github # for github/decap local only
-  name: git-gateway # for netlify
+  name: github # for github/decap local only
+  # name: git-gateway # for netlify
   repo: melrieoi/lyrics
   # site_url: https://melrieoi.github.io/lyrics # for github/decap local only
   site_url: https://melrieoilyrics.netlify.app # for netlify
