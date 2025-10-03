@@ -2,8 +2,8 @@ backend:
   name: github # for github/decap local only
   # name: git-gateway # for netlify (possible identity which is stoopid and dumb and bad)
   repo: melrieoi/lyrics
-  # site_url: https://melrieoi.github.io/lyrics # for github/decap local only
-  site_url: https://melrieoilyrics.netlify.app # for netlify
+  site_url: https://melrieoi.github.io/lyrics # for github/decap local only
+  # site_url: https://melrieoilyrics.netlify.app # for netlify
   branch: main
 
 media_folder: "uploads" # Folder for images
