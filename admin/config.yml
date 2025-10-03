@@ -5,6 +5,8 @@ backend:
   site_url: https://melrieoi.github.io/lyrics # for github/decap local only
   # site_url: https://melrieoilyrics.netlify.app # for netlify
   branch: main
+  auth_type: implicit
+  client_id: ${GITHUB_CLIENT_ID}
 
 media_folder: "uploads" # Folder for images
 public_folder: "/uploads"
