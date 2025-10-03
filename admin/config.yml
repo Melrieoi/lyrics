@@ -1,11 +1,10 @@
 backend:
-  name: github # for github/decap local only
-  # name: git-gateway # for netlify
+  # name: github # for github/decap local only
+  name: git-gateway # for netlify
   repo: melrieoi/lyrics
   # site_url: https://melrieoi.github.io/lyrics # for github/decap local only
   site_url: https://melrieoilyrics.netlify.app # for netlify
   branch: main
-
 
 media_folder: "uploads" # Folder for images
 public_folder: "/uploads"
@@ -14,19 +13,6 @@ public_folder: "/uploads"
 # public_folder: "/BandImages"
 
 collections:
-  # - name: "lyrics"
-  #   label: "Lyrics"
-  #   folder: "lyrics"
-  #   create: true
-  #   format: "json"
-  #   slug: "{{title | slug}}"
-  #   identifier_field: "title"
-  #   fields:
-  #     - { name: "title", label: "Title", widget: "string" }
-  #     - { name: "artist", label: "Artist", widget: "string" }
-  #     - { name: "album", label: "Album", widget: "string" }
-  #     - { name: "lyrics", label: "Lyrics", widget: "text" }
-
   - name: "bands"
     label: "Bands"
     folder: "Bands"
@@ -50,3 +36,17 @@ collections:
             fields:
               - { name: "songName", label: "Song Name", widget: "string" }
               - { name: "lyrics", label: "Lyrics", widget: "text", required: false }
+
+# dont remember what this is exactly but its old and bad and idk shit...
+  # - name: "lyrics"
+  #   label: "Lyrics"
+  #   folder: "lyrics"
+  #   create: true
+  #   format: "json"
+  #   slug: "{{title | slug}}"
+  #   identifier_field: "title"
+  #   fields:
+  #     - { name: "title", label: "Title", widget: "string" }
+  #     - { name: "artist", label: "Artist", widget: "string" }
+  #     - { name: "album", label: "Album", widget: "string" }
+  #     - { name: "lyrics", label: "Lyrics", widget: "text" }
