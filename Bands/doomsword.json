@@ -1,0 +1,127 @@
+{
+  "bandName": "Doomsword",
+  "image": "https://www.nocleansinging.com/wp-content/uploads/2018/05/DoomSword-1-e1526561180732.jpg",
+  "albums": [
+    {
+      "albumName": "Resound the Horn",
+      "year": 2002,
+      "songs": [
+        {
+          "songName": "Shores of Vinland"
+        },
+        {
+          "songName": "Onward Into Battle"
+        },
+        {
+          "songName": "The Doomsword"
+        },
+        {
+          "songName": "MCXIX"
+        },
+        {
+          "songName": "For Those Who Died With Sword in Hard"
+        },
+        {
+          "songName": "The Youth of Finn Mac Cool"
+        },
+        {
+          "songName": "Resound the Horn: Odin's Hail"
+        }
+      ]
+    },
+    {
+      "albumName": "Let Battle Commence",
+      "year": 2003,
+      "songs": [
+        {
+          "songName": "Heathen Assault"
+        },
+        {
+          "songName": "In the Battlefield"
+        },
+        {
+          "songName": "Woden'S Reign"
+        },
+        {
+          "songName": "Deathbringer"
+        },
+        {
+          "songName": "The Siege"
+        },
+        {
+          "songName": "Blood Eagle"
+        },
+        {
+          "songName": "My Name Will Live On",
+          "lyrics": ""
+        }
+      ]
+    },
+    {
+      "albumName": "My Name Will Live On",
+      "year": 2007,
+      "songs": [
+        {
+          "songName": "Death of Ferdia"
+        },
+        {
+          "songName": "Gergovia"
+        },
+        {
+          "songName": "Days of High Adventure"
+        },
+        {
+          "songName": "Steel of My Axe"
+        },
+        {
+          "songName": "Claidheamh Solais (Sword of Light)"
+        },
+        {
+          "songName": "Thundercult"
+        },
+        {
+          "songName": "Luni"
+        },
+        {
+          "songName": "Once Glorious"
+        },
+        {
+          "songName": "The Great Horn"
+        }
+      ]
+    },
+    {
+      "albumName": "The Eternal Battle",
+      "year": 2011,
+      "songs": [
+        {
+          "songName": "Varusslacht (Varus Battle)"
+        },
+        {
+          "songName": "Eternal Battle"
+        },
+        {
+          "songName": "Wrath of the Gods"
+        },
+        {
+          "songName": "Soldier of Fortune"
+        },
+        {
+          "songName": "Battle At the End of TIme"
+        },
+        {
+          "songName": "The Fulminant"
+        },
+        {
+          "songName": "Song of the Black Sword"
+        },
+        {
+          "songName": "The Time Has Come..."
+        },
+        {
+          "songName": "Warlife"
+        }
+      ]
+    }
+  ]
+}
