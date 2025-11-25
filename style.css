@@ -105,10 +105,21 @@ nav {
 
 /* Start of band albums */
 
+#albumContainer {
+    width: 50%;
+    margin-left: 25%;
+}
+
 #album {
     margin-top: 2%;
     width: 100%;
     text-align: center;
+}
+
+#album:not(#albumContainer #album) {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #album li:not(#albumName) {
@@ -135,6 +146,7 @@ pre {
     padding-top: 0.5%;
     font-size: 18px;
     pointer-events: none;
+    white-space: pre-wrap;
 }
 
 #songName {
@@ -144,6 +156,30 @@ pre {
 }
 
 /* End of band albums */
+
+/* Start of Band info */
+
+#bandBody {
+    margin-left: 25%;
+}
+
+#summin {
+    width: 50%;
+    flex-direction: row;
+}
+
+#bandInfo {
+    width: 25%;
+    display: block;
+}
+
+#fuck {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* End of Band info */
 
 p {
     font-size: 20px;

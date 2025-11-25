@@ -3,7 +3,8 @@ const urlParams = new URLSearchParams(window.location.search);
 const band = urlParams.get("band");
 const album = urlParams.get("album");
 
-fetch(`../lyrics/Bands/${band}.json`)
+// fetch(`../lyrics/Bands/${band}.json`) // for github
+fetch(`../Bands/${band}.json`) // for localhost
   .then(response => response.json())
   .then(data => {
       let albumData = data.albums.find(a => a.albumName === album);
