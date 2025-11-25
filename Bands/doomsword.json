@@ -1,0 +1,131 @@
+{
+  "bandName": "Doomsword",
+  "image": "/uploads/doomsword.jpg",
+  "albums": [
+    {
+      "albumName": "Resound the Horn",
+      "year": 2002,
+      "songs": [
+        {
+          "songName": "Shores of Vinland"
+        },
+        {
+          "songName": "Onward Into Battle"
+        },
+        {
+          "songName": "The Doomsword"
+        },
+        {
+          "songName": "MCXIX"
+        },
+        {
+          "songName": "For Those Who Died With Sword in Hard"
+        },
+        {
+          "songName": "The Youth of Finn Mac Cool"
+        },
+        {
+          "songName": "Resound the Horn: Odin's Hail"
+        }
+      ],
+      "review": "yehs"
+    },
+    {
+      "albumName": "Let Battle Commence",
+      "year": 2003,
+      "songs": [
+        {
+          "songName": "Heathen Assault"
+        },
+        {
+          "songName": "In the Battlefield"
+        },
+        {
+          "songName": "Woden'S Reign"
+        },
+        {
+          "songName": "Deathbringer"
+        },
+        {
+          "songName": "The Siege"
+        },
+        {
+          "songName": "Blood Eagle"
+        },
+        {
+          "songName": "My Name Will Live On",
+          "lyrics": ""
+        }
+      ]
+    },
+    {
+      "albumName": "My Name Will Live On",
+      "year": 2007,
+      "songs": [
+        {
+          "songName": "Death of Ferdia"
+        },
+        {
+          "songName": "Gergovia"
+        },
+        {
+          "songName": "Days of High Adventure"
+        },
+        {
+          "songName": "Steel of My Axe"
+        },
+        {
+          "songName": "Claidheamh Solais (Sword of Light)"
+        },
+        {
+          "songName": "Thundercult"
+        },
+        {
+          "songName": "Luni"
+        },
+        {
+          "songName": "Once Glorious"
+        },
+        {
+          "songName": "The Great Horn"
+        }
+      ]
+    },
+    {
+      "albumName": "The Eternal Battle",
+      "year": 2011,
+      "songs": [
+        {
+          "songName": "Varusslacht (Varus Battle)",
+          "lyrics": "Xeru Sword of the Brave\nSkos Shield of the Wise and Faithful\nThe Eye of Wotan casts its glance\nOver wooded battlefields\n\nRin the Everflowing Blood\nGuardian of the Sacred Land\nWhala Spears shall fall\nDonar is guiding us all!\n\nLet the soil of Wotan's land\nSoak the blood of Mars' and his legions\nBy Tiwaz's spear the empire ends here\nWe drew the line\nThe empire ends at the Rhein\nIn Varus Battle\n\nArmin leader of folks\nBringer of Unity and Faith\nLead us all to Triumph\nBy Wotan shall Germania remain Free!\n\nSodden paths our battlefield\nSudden ambush and assault\nRoman blood paints the altars\nSacrifice and Victory!\n\nLet the soil of Wotan's land\nSoak the blood of Mars' and his legions\nBy Tiwaz's spear the empire ends here\nWe drew the line\nThe empire ends at the Rhein\nIn Varus Battle"
+        },
+        {
+          "songName": "Eternal Battle",
+          "lyrics": "I never thought\nThe legends were true\nNow the golden hall opens it gates\nTo it's dying son\n\nAs one battle fades\nAnother one soars\nI take my place\nAt Odin's side\n\nBlood runs fresh and fast\nThrough my veins\nI am now ready to fight\nForevermore\n\nI can see the battle in the sky\nEternal battle way up high\nI can see the battle in the sky\nEternal battle way up high\n\nClad in a white wolf's skin\nNewly tempered blade at hand\nMy forefathers welcome their son\nAllfather here I am\n\nShould I be granted a wish\nOne last warriors prayer\nThen let my blade never dull\nAnd let me fight for eternity\n\n(x2)\nBlood runs fresh and fast\nThrough my veins\nI am now ready to fight\nForevermore\n\nBlood runs fresh and fast\nThrough my veins\nI am now ready to fight\nForevermore\n\nI can see the battle in the sky\nEternal battle way up high\nWay up high"
+        },
+        {
+          "songName": "Wrath of the Gods",
+          "lyrics": "Blood, scars and wounds\nI shape my own fate\nFalsehood forgers\nMy life as my needs\n\nWrath of the gods\nOr envy of men\nEvil and treachery\nShall never defeat me\n\nBefore the gods\nI swear to never\nGive up the fight, the fight\nBefore the gods\nI swear to never\nGive up the fight, the fight\nWrath of the gods\n\nFire of anger\nOf trust betrayed\nSpirit of ice\nStillness of soul\n\nRough tempered heart\nTrial by solitude\nThe strong lips or iron\nThe blade unsheathed\n\nBefore the gods\nI swear to never\nGive up the fight, the fight\nBefore the gods\nI swear to never\nGive up the fight, the fight\nWrath of the gods\n\nScarred and wounded\nI rise once again\nI am undefeatable\nUnbreakable\n\nOstracised, exiled\nYet unvanquished\nI am impassable\nIndomitable\n\nBefore the gods\nI swear to never\nGive up the fight, the fight\nBefore the gods\nI swear to never\nGive up the fight, the fight\nWrath of the gods\n\nWrath of the gods"
+        },
+        {
+          "songName": "Soldier of Fortune"
+        },
+        {
+          "songName": "Battle At the End of TIme"
+        },
+        {
+          "songName": "The Fulminant"
+        },
+        {
+          "songName": "Song of the Black Sword"
+        },
+        {
+          "songName": "The Time Has Come..."
+        },
+        {
+          "songName": "Warlife"
+        }
+      ]
+    }
+  ]
+}
