@@ -3,8 +3,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const band = urlParams.get("band");
 const album = urlParams.get("album");
 
-// fetch(`../lyrics/Bands/${band}.json`) // for github
-fetch(`../Bands/${band}.json`) // for localhost
+fetch(`../../Bands/${band}.json`)
   .then(response => response.json())
   .then(data => {
       let albumData = data.albums.find(a => a.albumName === album);
@@ -16,7 +15,9 @@ fetch(`../Bands/${band}.json`) // for localhost
         let ul = document.createElement("ul");
         ul.innerHTML = `
             <li id="albumName"><a>${albumData.albumName} (${albumData.year})</a></li>
+            
             `;
+            // <li id="review">${albumData.review}</li>
         albumsContainer.appendChild(ul);
 
         albumData.songs.forEach(song => {
@@ -31,5 +32,21 @@ fetch(`../Bands/${band}.json`) // for localhost
 
           ul.appendChild(li);
           ul.appendChild(pre);
+
+          let reviewdiv = document.getElementById("albumReview");
+          let reviewp = document.createElement("p");
+          
+          reviewp.innerHTML = `
+          <p>${albumData.review}</p>
+          `;
+          reviewdiv.appendChild(reviewp);
+
+          let imageSrc = albumData.albumimage ? `../lyrics${albumData.albumimage}`: "../lyrics/uploads/placeholder.png";
+          let albumimg = document.getElementById("albumCover");
+
+          albumimg.innerHTML = `
+          <img src="${imageSrc}" alt="${band.bandName}">
+          `;
+
         });
   });

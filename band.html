@@ -15,23 +15,39 @@
     </ul>
 </nav>
 
-<body id="bandBody">
+<!-- Verticale spacing hiervan is incorrect/anders dan de huidige versie -->
+<!-- Het komt omdat de margin een % is, en dat is blijkbaar gerelateerd met de container Width, niet Height. 
+Dus wanneer ik #bandInfo er naast heb gelegd en de #albumContainer dunner heb gemaakt is de 2% nu minder geworden -->
+<body>
+    <div id="albumsandinfo">
 
-    <div id="summin">
-        <div id="fuck">
+        <div id="titleContainer">
             <div id="welcome">
                 <h1 id="bandTitle"></h1>
             </div>
 
             <div id="albumContainer"></div>
-
         </div>
 
-        <div id="bandInfo">what the doodoo?</div>
+        <div id="bandInfo"></div>
+
     </div>
 
     <script src="scripts/band.js"></script>
 
 </body>
+
+<!-- Huidige versie -->
+<!-- <body>
+
+    <div id="welcome">
+        <h1 id="bandTitle"></h1>
+    </div>
+
+    <div id="albumContainer"></div>
+
+    <script src="scripts/band.js"></script>
+
+</body> -->
 
 </html>

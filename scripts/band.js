@@ -2,8 +2,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const band = urlParams.get("band");
 
-// fetch(`../lyrics/Bands/${band}.json`) // for github
-fetch(`../Bands/${band}.json`) // for localhost
+fetch(`../../Bands/${band}.json`)
     .then(response => response.json())
     .then(data => {
         document.getElementById("pageTitle").innerText = data.bandName; // Sets the page title
@@ -32,10 +31,27 @@ fetch(`../Bands/${band}.json`) // for localhost
             });
         });
 
+        let div2 = document.getElementById("bandInfo");
+        let p2 = document.createElement("p");
+        // Works but doesn't take into account if info exists but is empty
+        // if(!(data.info)){
+        //     var nationality = "Undefined";
+        //     var foundingyear = "Undefined";
+        // } else {
+        //     var nationality = data.info[0].nationality
+        //     var foundingyear = data.info[0].foundingyear
+        // }
+        // This way aparently does take that into account
+        var nationality = data.info?.[0]?.nationality ?? "Undefined";
+        var foundingyear = data.info?.[0]?.foundingyear ?? "Undefined";
+        var bandlink = data.link ?? "Undefined";
 
-        // let div2 = document.getElementById("bandInfo");
-        // let p2 = document.createElement("p");
-        // p2.innerHTML = '<p>what??? help kaas hallo?</p>';
-        // div2.appendChild(p2);
+        p2.innerHTML = `
+        <p>Nationality: ${nationality}</p>
+        <p>Founding year: ${foundingyear}</p>
+        <p>Link: <a href="https://${bandlink}">${bandlink}</a></p>
+        `;
+        // p2.innerHTML = '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>';
+        div2.appendChild(p2);
     });
 // <img src="../${album.cover}">
