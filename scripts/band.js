@@ -2,7 +2,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const band = urlParams.get("band");
 
-// fetch(`../Bands/${band}.json`) // for local use
+//fetch(`../Bands/${band}.json`) // for local use
 fetch(`../lyrics/Bands/${band}.json`) // for github use
     .then(response => response.json())
     .then(data => {
