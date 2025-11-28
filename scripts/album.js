@@ -3,7 +3,8 @@ const urlParams = new URLSearchParams(window.location.search);
 const band = urlParams.get("band");
 const album = urlParams.get("album");
 
-fetch(`../lyrics/Bands/${band}.json`)
+// fetch(`../Bands/${band}.json`) // for local use
+fetch(`../lyrics/Bands/${band}.json`) // for github use
   .then(response => response.json())
   .then(data => {
       let albumData = data.albums.find(a => a.albumName === album);
@@ -15,7 +16,6 @@ fetch(`../lyrics/Bands/${band}.json`)
         let ul = document.createElement("ul");
         ul.innerHTML = `
             <li id="albumName"><a>${albumData.albumName} (${albumData.year})</a></li>
-            
             `;
             // <li id="review">${albumData.review}</li>
         albumsContainer.appendChild(ul);
@@ -37,6 +37,8 @@ fetch(`../lyrics/Bands/${band}.json`)
           let reviewp = document.createElement("p");
           
           reviewp.innerHTML = `
+          <p>Score: ${albumData.score}/10</p>
+          <br>
           <p>${albumData.review}</p>
           `;
           reviewdiv.appendChild(reviewp);

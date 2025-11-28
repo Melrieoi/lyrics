@@ -2,7 +2,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 const band = urlParams.get("band");
 
-fetch(`../lyrics/Bands/${band}.json`)
+// fetch(`../Bands/${band}.json`) // for local use
+fetch(`../lyrics/Bands/${band}.json`) // for github use
     .then(response => response.json())
     .then(data => {
         document.getElementById("pageTitle").innerText = data.bandName; // Sets the page title
