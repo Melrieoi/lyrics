@@ -1,5 +1,10 @@
 [
   {
+    "bandName": "Alien Weaponry",
+    "filename": "alien-weaponry",
+    "image": "/uploads/alien-weaponry.png"
+  },
+  {
     "bandName": "Crypt Sermon",
     "filename": "crypt-sermon",
     "image": "/uploads/crypt-sermon.jpg"
