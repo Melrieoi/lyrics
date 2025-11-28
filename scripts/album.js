@@ -40,9 +40,9 @@ fetch(`../lyrics/Bands/${band}.json`) // for github use
         let reviewp = document.createElement("p");
         
         reviewp.innerHTML = `
-        <p>Score: ${albumData.score}/10
+        <p>Score: ${albumData.score}/10</p>
         <br>
-        ${albumData.review}</p>
+        <p>${albumData.review}</p>
         `;
         reviewdiv.appendChild(reviewp);
 
@@ -52,4 +52,5 @@ fetch(`../lyrics/Bands/${band}.json`) // for github use
         albumimg.innerHTML = `
         <img src="${imageSrc}" alt="${band.bandName}">
         `;
+
   });
