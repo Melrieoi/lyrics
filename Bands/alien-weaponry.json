@@ -1,0 +1,56 @@
+{
+  "link": "https://alienweaponry.com/",
+  "bandName": "Alien Weaponry",
+  "image": "/uploads/alien-weaponry.png",
+  "info": [
+    {
+      "nationality": "New Zeeland",
+      "foundingyear": "2010"
+    }
+  ],
+  "albums": [
+    {
+      "albumName": "Te Rã",
+      "year": 2025,
+      "albumimage": "/uploads/mao-moko.jpg",
+      "score": 9,
+      "review": "Holy fucking shit this album slaps me in the balls so hard. I do not even care much for the album as a whole but Mau Moko my, fucking, god. The only way this album could become a 10/10 is if the rest of the songs were just longer versions of Mau Moko. That is the only critique I have for the song.",
+      "songs": [
+        {
+          "songName": "Crown"
+        },
+        {
+          "songName": "Mau Moko",
+          "lyrics": "Ono tekau ngā tau e kōkiri ana (auē) mō o mātou tikanga\nHe tata wareware te tuhi toi, I tata ngaro ō mātou ritenga\nKoropehu ō mātou tōhunga, ka pēhia e te kuīnitanga\nI parea mātou e te mana moko I āu mahi kino\n\nKo te hunga mau moko mātou\nE kore koe e mātau (e)\nTe tikanga tāmoko\nKōrero tuku iho\nTāngata Mau Moko\n\nKua horahia e koe te kiri Māori hei whakaaturanga\nHoki mai te mana, nā te ao taihara I whakaora (e)\nKa whiua mai rā ō kanohi whakawā kei patu mai\nOtirā, ka whakamarua mātou e te moko I tō mauāhara\n\nKo te hunga mau moko mātou\nE kore koe e mātau (e)\nTe tikanga tāmoko\nKōrero tuku iho\nTāngata Mau Moko\nMau Moko\nKo te hunga Mau Moko\nHoki mai te mana\n\nKō wai mātou ē!\nKo nga tangata mau moko mātou\nKīhai koe e māmara\nŌ mātou kōrero tuhi kiri\nŌ mātou kōrero tuku iho!\n\nKo te hunga mau moko mātou\nE kore koe e mātau (e)\nTe tikanga tāmoko\nKōrero tuku iho\nTāngata Mau Moko\n\nMohoao, makimaki, ao kōhatu, kōmuri Kao!\nKō wai mātou ē!\nKo nga tangata mau moko mātou e!\nKo te hunga Mau Moko"
+        },
+        {
+          "songName": "1000 Friends"
+        },
+        {
+          "songName": "Hanging by a Thread"
+        },
+        {
+          "songName": "Tama-Nui-Te-Rã"
+        },
+        {
+          "songName": "Myself to Blame"
+        },
+        {
+          "songName": "Taniwha (feat. Randy Blythe)"
+        },
+        {
+          "songName": "Blackened Sky"
+        },
+        {
+          "songName": "Te Riri o Tãwhirimãtea"
+        },
+        {
+          "songName": "Ponaturi"
+        },
+        {
+          "songName": "Te Kore"
+        }
+      ]
+    }
+  ]
+}
