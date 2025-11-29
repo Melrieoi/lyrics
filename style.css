@@ -201,10 +201,29 @@ pre {
     text-wrap-mode: wrap;
 }
 
-#songName {
+#songName { /* On album page */
     color: goldenrod;
     pointer-events: none;
     margin-top: 1.45%; /* Was 0.5% */
+}
+
+/* Werkt niet goed omdat band en album pagina's vergelijkbare id's hebben */
+/* #album ul:not(#albumName) {
+    display: grid;
+    grid-gap: 1%;
+} */
+
+#albumImg {
+    max-width: 50%;
+    margin-left: 25%;
+    aspect-ratio: 1/1;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+}
+
+#reviewStyle {
+    line-height: 150%;
 }
 
 /* End of band albums */

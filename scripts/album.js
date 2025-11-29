@@ -17,13 +17,12 @@ fetch(`../lyrics/Bands/${band}.json`) // for github use
         ul.innerHTML = `
             <li id="albumName"><a>${albumData.albumName} (${albumData.year})</a></li>
             `;
-            // <li id="review">${albumData.review}</li>
         albumsContainer.appendChild(ul);
 
         albumData.songs.forEach(song => {
           let li = document.createElement("li");
-          li.innerHTML = `${song.songName}`;
           li.setAttribute('id', 'songName');
+          li.innerHTML = `${song.songName}`;
 
           let pre = document.createElement("pre");
           pre.setAttribute('id', 'lyricsModalBody');
@@ -33,23 +32,21 @@ fetch(`../lyrics/Bands/${band}.json`) // for github use
           ul.appendChild(li);
           ul.appendChild(pre);
 
-
-
         });
         let reviewdiv = document.getElementById("albumReview");
         let reviewp = document.createElement("p");
         
         reviewp.innerHTML = `
-        <p>Score: ${albumData.score}/10
+        <p>Score: ${albumData.score}/10</p>
         <br>
-        ${albumData.review}</p>
+        <p id="reviewStyle">${albumData.review}</p>
         `;
         reviewdiv.appendChild(reviewp);
 
-        let imageSrc = albumData.albumimage ? `../lyrics${albumData.albumimage}`: "../lyrics/uploads/placeholder.png";
+        let imageSrc = albumData.albumimage ? `../lyrics/${albumData.albumimage}`: "../lyrics/uploads/placeholder.png";
         let albumimg = document.getElementById("albumCover");
 
         albumimg.innerHTML = `
-        <img src="${imageSrc}" alt="${band.bandName}">
+        <img id="albumImg" src="${imageSrc}" alt="${data.bandName}">
         `;
   });
