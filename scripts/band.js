@@ -39,10 +39,12 @@ fetch(`../lyrics/Bands/${band}.json`) // for github use
         var foundingyear = data.info?.[0]?.foundingyear ?? "Undefined";
         var bandlink = data.link ?? "Undefined";
 
+        const fullURL = `https://${bandlink}`;
+
         p2.innerHTML = `
         <p>Nationality: ${nationality}</p>
         <p>Founding year: ${foundingyear}</p>
-        <p>Link: <a href="${bandlink}">${bandlink}</a></p>
+        <p>Link: <a href="${fullURL}">${bandlink}</a></p>
         `;
 
         div2.appendChild(p2);
