@@ -128,6 +128,7 @@ nav {
     margin-top: 5%;
     margin-left: 5%;
     max-width: 30.5%;
+    min-width: 30.5%;
     margin-right: 2%;
 }
 
@@ -161,6 +162,13 @@ op de pagina's. of de #album moet even breed worden */
 #albumAndInfo {
     display: flex;
     flex-direction: row;
+}
+
+#yellowBorderLeft {
+    border-left: 2px;
+    border-left-style: solid;
+    border-color: goldenrod;
+    padding-left: 2%;
 }
 
 #albumReview p {

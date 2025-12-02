@@ -35,6 +35,7 @@ fetch(`../lyrics/Bands/${band}.json`) // for github use
         });
         let reviewdiv = document.getElementById("albumReview");
         let reviewp = document.createElement("p");
+        reviewp.setAttribute('id', 'yellowBorderLeft');
         
         reviewp.innerHTML = `
         <p>Score: ${albumData.score}/10</p>

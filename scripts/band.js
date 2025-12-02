@@ -33,6 +33,7 @@ fetch(`../lyrics/Bands/${band}.json`) // for github use
 
         let div2 = document.getElementById("bandInfo");
         let p2 = document.createElement("p");
+        p2.setAttribute('id', 'yellowBorderLeft');
 
         var nationality = data.info?.[0]?.nationality ?? "Undefined";
         var foundingyear = data.info?.[0]?.foundingyear ?? "Undefined";
