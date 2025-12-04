@@ -46,8 +46,11 @@ nav {
                 display: block;
                 color: black;
                 font-size: 18px;
-                padding: 14px 14px;
+                padding-left: 14px;
+                padding-right: 14px;
                 text-decoration: none;
+                height: 100%;
+                line-height: 51px;
             }
 
             nav ul li ul {
