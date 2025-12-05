@@ -1,0 +1,52 @@
+{
+  "link": "tyr.fo",
+  "bandName": "Týr",
+  "image": "https://images.squarespace-cdn.com/content/v1/5e7a8a50b2e1486cd43fc04d/beee46d0-c285-452e-adec-b968b6fe00b9/with+logo.PNG",
+  "info": [
+    {
+      "foundingyear": "1998",
+      "nationality": "Faroe Islands"
+    }
+  ],
+  "albums": [
+    {
+      "albumName": "How Far to Asgaard",
+      "year": "",
+      "albumimage": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/HowFarToAsgaard2008rerelease.jpg/250px-HowFarToAsgaard2008rerelease.jpg",
+      "songs": [
+        {
+          "songName": "Hail to the Hammer"
+        },
+        {
+          "songName": "Excavation"
+        },
+        {
+          "songName": "The Rune"
+        },
+        {
+          "songName": "Ten Wild Dogs"
+        },
+        {
+          "songName": "God of War"
+        },
+        {
+          "songName": "Sand in the Wind"
+        },
+        {
+          "songName": "Ormurin Langi"
+        },
+        {
+          "songName": "How Far to Asgaard"
+        },
+        {
+          "songName": "Olavur Riddararos"
+        },
+        {
+          "songName": "Styrisvolurin"
+        }
+      ],
+      "review": "I like it.",
+      "score": ""
+    }
+  ]
+}
