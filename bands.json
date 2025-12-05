@@ -35,6 +35,11 @@
     "image": "/uploads/slough-feg.png"
   },
   {
+    "bandName": "Týr",
+    "filename": "týr",
+    "image": "https://images.squarespace-cdn.com/content/v1/5e7a8a50b2e1486cd43fc04d/beee46d0-c285-452e-adec-b968b6fe00b9/with+logo.PNG"
+  },
+  {
     "bandName": "Wuthering Heights",
     "filename": "wuthering-heights",
     "image": "/uploads/wuthering-heights.png"
