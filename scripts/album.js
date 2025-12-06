@@ -44,7 +44,7 @@ fetch(`../lyrics/Bands/${band}.json`) // for github use
         `;
         reviewdiv.appendChild(reviewp);
 
-        let imageSrc = albumData.albumimage ? `../lyrics/${albumData.albumimage}`: "../lyrics/uploads/placeholder.png";
+        let imageSrc = albumData.albumimage //? `../lyrics/${albumData.albumimage}`: "../lyrics/uploads/placeholder.png";
         let albumimg = document.getElementById("albumCover");
 
         albumimg.innerHTML = `
