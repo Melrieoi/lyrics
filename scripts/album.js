@@ -44,7 +44,12 @@ fetch(`../lyrics/Bands/${band}.json`) // for github use
         `;
         reviewdiv.appendChild(reviewp);
 
-        let imageSrc = `../lyrics/${albumData.albumimage}`; //? `../lyrics/${albumData.albumimage}`: "../lyrics/uploads/placeholder.png";
+        //let imageSrc = `../lyrics/${albumData.albumimage}`; //? `../lyrics/${albumData.albumimage}`: "../lyrics/uploads/placeholder.png";
+        const imageSrc = albumData.albumimage && albumData.albumimage.startsWith("http")
+          ? albumData.albumimage
+          : albumData.albumimage
+              ? `../lyrics/${albumData.albumimage}`
+              : "../lyrics/${albumData.albumimage}";
         let albumimg = document.getElementById("albumCover");
 
         albumimg.innerHTML = `
