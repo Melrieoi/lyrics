@@ -1,4 +1,9 @@
 {
   "bandName": "template",
-  "link": "link"
+  "link": "link",
+  "info": [
+    {
+      "foundingyear": "song"
+    }
+  ]
 }
